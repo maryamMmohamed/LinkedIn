@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="css/login.css">
+<link rel="stylesheet" type="text/css" href="css/profile.css">
+ <link rel="stylesheet" type="text/css" href="css/chatbox.css">
+</head>
+<body>
+
+  <nav class="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="img/log.PNG">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <form class="navbar-form navbar-center">
+        <input type="search" class="form-control" placeholder="Search">
+    </form>
+
+
+    <ul class="nav-main nav-container display-inline-flex full-height">
+      <li class="nav-item nav-item--feed"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link">
+        <span class="nav-item__icon"><i class="fas fa-home"></i></span> <span class="nav-item__title">Home</span></a>
+      </li>
+      <li class="nav-item nav-item--mynetwork"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-users"></i></span><span class="nav-item__title">My Network</span></a>
+      </li>
+      <li class="nav-item nav-item--jobs"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-briefcase"></i></span> <span class="nav-item__title">Jobs</span></a>
+      </li>
+      <li class="nav-item nav-item--messaging"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-comment-alt"></i></span> <span class="nav-item__title">Messaging</span></a></li>
+      <li class="nav-item nav-item--notifications"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__badge"><span aria-hidden="true" class="nav-item__badge-count">6</span><span class="visually-hidden">6 new notifications.</span></span><span class="nav-item__icon"><i class="fas fa-bell"></i></span> <span class="nav-item__title">Notifications</span></a>
+      </li>
+      <li class="nav-item nav-item--profile"> <div class="nav-item__content">
+      <div class="dropdown closed ">
+        <button id="img-dropdown" class="nav-item__link dropdown-trigger">
+          <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-item__profile-member-photo nav-item__icon" alt="maryam mohamed" height="24" width="24">
+    <div class="nav-item__title-container">
+      <span class="nav-item__title nav-item__dropdown-trigger--title">Me</span>
+      <i class="fas fa-sort-down"></i>
+    </div>
+</button>
+<ul class="dropdown-options nav-settings__dropdown-options dropdown-options--expanded " id="nav-settings__dropdown-options">
+  <li class="nav-settings__topcard nav-settings__no-hover">
+<a href="#" class="nav-settings__view-profile-link block clearfix active "> 
+       <div class="nav-settings__member nav-settings__block">
+          <div class="nav-settings__member-photo-container">
+            <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-settings__member-photo EntityPhoto-circle-4" alt="maryam mohamed" height="70" width="70">
+          </div>
+
+          <div class="nav-settings__member-info-container">
+            <h3 class="nav-settings__member-name t-16 t-black t-bold">
+              maryam mohamed
+            </h3>
+            <h4 class="nav-settings__member-occupation t-14 t-black--light t-normal">
+              Student at Information Technology Institute (ITI)
+            </h4>
+          </div>
+        </div>
+
+        <div class="nav-settings__linkcard nav-settings__block">
+          <span class="nav-settings__linkcard-link button-tertiary-medium">
+            View profile
+          </span>
+        </div>
+</a>    
+</li>
+    <li class="nav-settings__dropdown-options--account nav-settings__dropdown-options nav-settings__no-hover">
+      <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Account</h5>
+        <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Settings &amp; Privacy</a>          
+            </li>
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Language</a>            
+            </li>
+        </ul>
+    </li>
+
+      <li class="nav-settings__dropdown-options--help nav-settings__dropdown-options nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Need Help?</h5>
+        <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+            <button class="nav-dropdown__action-button t-14 t-black--light t-normal block">
+              Open Quick Help
+            </button>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-settings__dropdown-options--manage nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Manage</h5>
+          <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a class="nav-settings__manage-link nav-settings__view-activity-link block ">Posts &amp; Activity</a></li>
+
+              <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+                <a target="_blank" href="#" class="block nav-settings__manage-link ">Job postings</a> 
+              </li>
+          </ul>
+      </li>
+    <li class="nav-settings__dropdown-options--actions nav-settings__no-hover">
+      <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item nav-dropdown__action t-14 t-black t-bold">
+            <a href="#" class="block ">Sign out</a>
+          </li>
+      </ul>
+    </li>
+
+</ul>
+</div>
+    </div>
+</li>
+<li id="app-launcher-nav-item" class="nav-item nav-item--app-launcher">
+  <div id="ember32" class="nav-item__content ">
+    <button class="nav-item__link dropdown-trigger">
+  <i class="fas fa-grip-horizontal"></i>
+  <div class="nav-item__title-container">
+    <span class="nav-item__title nav-item__dropdown-trigger--title">Work</span>
+    <i class="fas fa-sort-down"></i>
+  </div>
+</button>
+</div>
+</li>
+<li id="spotlight-one-nav-item" class="nav-item nav-item--spotlight-one nav-item__spotlight">
+  <div class="nav-item__wormhole">  
+    <div id="ember29" class="nav-item__content t-14 t-black t-normal premium-upsell-link ">
+<a href="#" class="link-without-visited-state nav-item__spotlight-upsell premium-upsell-link--long ">Try Premium Free for 1 Month</a>
+</div>
+  </div>
+</li>
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+<section class="header-profile">
+  <div class="container-profile">
+    <div class="profile-section">
+      <div class="Elevation-2dp profile-background-image profile-background-image--loading "></div>
+
+      <div class="">
+        <section class="pv-profile-section pv-top-card-section artdeco-container-card "> 
+<div class="pv-top-card-section__profile-photo-container pv-top-card-v2-section__profile-photo-container">
+  <div class="pv-top-card-section__photo-wrapper pv-top-card-v2-section__photo-wrapper">
+      <div class="pv-top-card-section__edit-photo pv-top-card-v2-section__edit-photo profile-photo-edit "> 
+       <button class="profile-photo-edit__edit-btn">
+      <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_200_200/0?e=1555545600&amp;v=beta&amp;t=RTgUdeF_qP12UPUIX0ufodIdN1TVRlDgcy8Dsrh3Hho" class="profile-photo-edit__preview" alt="Edit photo" height="128" width="128">
+  </button>
+</div>
+
+  </div>
+</div>
+
+<div class="pv-top-card-v2-section__meta-info">
+    <a href="#" class="pv-top-card-section__edit button-tertiary-medium-round" data-toggle="modal" data-target="#myProfile"><i class="fas fa-pen"></i></a>
+    <!-- The Modal -->
+  <div class="modal" id="myProfile">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Edit intro</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+
+        <div class="pe-top-card-form__background-image-container relative">
+          <div class="profile-background-image--no-rounded-corners profile-background-image ">  
+            <div class="profile-background-image__image-container">
+      <img class="profile-background-image__image relative full-width full-height" id="profile-background-image-target-image" alt="Background Image" src="https://media.licdn.com/dms/image/C4D16AQGSzWxB6ZWSuQ/profile-displaybackgroundimage-shrink_350_1400/0?e=1556755200&amp;v=beta&amp;t=zH-iqqXzgYHZHrPDNg-B1Bt97NRY4kYLK-BeOEC6fi8">
+  </div>
+</div>
+<div class="profile-background-image-edit-button ">  
+          <div class="profile-background-image-edit-button__hint visibility-hidden t-14 t-white t-normal"></div>
+    <button class="profile-background-image-edit-button__button">
+      <i class="fas fa-pencil-alt"></i>
+    </button>
+</div>
+      </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+
+<div class="pe-top-card-form__photo-field pe-top-card-form__photo-field--floating pe-top-card-form__photo-wrapper pe-top-card-v2-form__photo-wrapper EntityPhoto-circle-8">
+  <div class="pe-top-card-form__photo profile-photo-edit--large-preview profile-photo-edit ">  
+      <button class="profile-photo-edit__edit-btn">
+        <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_200_200/0?e=1556755200&amp;v=beta&amp;t=D_-6K2Xb9alHNFAU57I09p_QIn4RlOQCZqKuTJhbftM" class="profile-photo-edit__preview" alt="Edit photo" height="152" width="152">
+        <i class="fas fa-pencil-alt"></i>
+     </button>
+  </div>
+</div>
+
+          <form>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-6">
+                  <label>First Name *</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label>Last Name *</label>
+                  <input type="text" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Headline *</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                  <label>Current Position</label>
+                  <select class="form-control">
+                    <option>Month</option>
+                  </select>
+            </div>
+            <div class="form-group">
+                  <label>Education</label>
+                  <select class="form-control">
+                    <option>Month</option>
+                  </select>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+              <label>Contry/Region *</label>
+              <select class="form-control">
+                    <option>Egypt</option>
+                  </select>
+            </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+              <label>ZIP code</label>
+              <input type="text" class="form-control">
+            </div>
+              </div>
+            </div>
+            <div class="form-group">
+                  <label>Industry *</label>
+                  <select class="form-control">
+                    <option>Month</option>
+                  </select>
+            </div>
+            <div class="form-group">
+              <label>Summary</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Save</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="mt4 display-flex  ember66"><div class="pv-top-card-v2-section__info mr5">
+  <div>
+    <h1 class="pv-top-card-section__name inline t-24 t-normal">
+      maryam mohamed
+    </h1>
+ </div>
+
+    <h2 class="pv-top-card-section__headline mt1 t-normal">
+      Student at Information Technology Institute (ITI)
+    </h2>
+
+  <h3 class="pv-top-card-section__location t-16 t-black--light t-normal mt1 inline-block">
+    Egypt
+  </h3>
+
+    <div class="pv-top-card-v2-section__actions mt4">
+      <section class="pe-hub-section mb2 ">
+        <button class="pe-hub-section__expand-button pe-hub__action pe-hub-section__expand-button--v2-topcard button-primary-large" data-control-name="profile_edit_fab" aria-expanded="false" aria-controls="pe-hub-section" data-ember-action="" data-ember-action-70="70">
+  <span class="t-16 t-white t-bold white-space-nowrap">Add profile section</span>
+  <i class="fas fa-sort-down"></i>
+</button>
+</section>
+
+      <span class="pv-s-profile-actions__overflow ">
+        <button class="pv-s-profile-actions__overflow-toggle  button-secondary-large-muted mh1 ml2 artdeco-button artdeco-button--muted artdeco-button--2 artdeco-button--secondary dropdown-toggle" data-toggle="dropdown">
+          <span class="artdeco-button__text">More…</span>
+        </button>
+         <ul class="dropdown-menu dropdown-menu-more">
+          <li><a href="#"><i class="fas fa-times"></i> Unfollow</a></li>
+          <li><a href="#"><i class="far fa-check-circle"></i> Connection Removed</a></li>
+        </ul>
+</span>
+    </div>
+</div>
+<div class="pv-top-card-v2-section__links">
+    <button class="pv-top-card-v2-section__link pv-top-card-v2-section__link-experience mb1">
+      <img src="img/download.gif" class="pv-top-card-v2-section__entity-logo-img EntityPhoto-square-5 ghost-company" alt="">
+        <span class="pv-top-card-v2-section__entity-name pv-top-card-v2-section__company-name text-align-left ml2 t-14 t-black t-bold lt-line-clamp lt-line-clamp--multi-line ">  freelancer</span>
+    </button>
+
+    <button class="pv-top-card-v2-section__link pv-top-card-v2-section__link-education mb1">
+      <img src="img/0.png" class="pv-top-card-v2-section__entity-logo-img EntityPhoto-square-5" alt="Information Technology Institute (ITI)">
+        <span id="ember78" class="pv-top-card-v2-section__entity-name pv-top-card-v2-section__school-name text-align-left ml2 t-14 t-black t-bold lt-line-clamp lt-line-clamp--multi-line ">  Information Technology Institute (ITI)</span>
+
+    </button>
+
+<a href="#" id="ember79" class="pv-top-card-v2-section__link pv-top-card-v2-section__link--contact-info mb1 ">   
+    <span class="pv-top-card-v2-section__entity-name pv-top-card-v2-section__contact-info ml2 t-14 t-black t-bold">
+      <i class="far fa-address-book"></i>
+      See contact info
+    </span>
+</a>
+<a href="#" class="pv-top-card-v2-section__link pv-top-card-v2-section__link--connections ">       
+        <span class="pv-top-card-v2-section__entity-name pv-top-card-v2-section__connections ml2 t-14 t-black t-bold">
+          <i class="fas fa-users"></i>
+          See connections (500+)
+        </span>
+</a></div>
+</div>
+
+    <div class="pv-top-card-section__summary pv-top-card-section__summary--with-content mt4 ">   
+     <p class="pv-top-card-section__summary-text mt4 ">    <span class="lt-line-clamp__line">A Front end developer | UI developer  experienced . Extremely motivated and committed to deliver the</span>
+      <span class="lt-line-clamp__line">highest standard of work.  I have qualifications in Web Development using HTML, CSS, SASS, JavaScript,</span>
+      <span class="lt-line-clamp__line lt-line-clamp__line--last">
+      JQuery, Bootstrap Library...  I have Ability to hard worker, Shares knowledge, responsibilities, and experti
+      <span class="lt-line-clamp__ellipsis">...</span></span>
+
+<span class="lt-line-clamp__ellipsis lt-line-clamp__ellipsis--dummy">...</span></p>
+
+
+<div class="pv-top-card-section__summary-treasury mt4 pv-treasury-list-preview "><a href="#" id="ember87" class="pv-treasury-list-preview__treasury-item-link ">      
+  <figure class="Elevation-0dp pv-treasury-item pv-treasury-item--compact pv-treasury-item--show-summary ">  
+    <div class="pv-treasury-item__image-container pv-treasury-item__image-container--with-desc">
+    <img src="https://media.licdn.com/media-proxy/ext?w=800&amp;h=800&amp;f=n&amp;hash=ZYPR1%2B%2FmOjrO9EfJ8lhEE0K5P0E%3D&amp;ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6plxVU0RAo5KuSpU6i4URDS8zfDW2-GGbFvo3FPSW3KJ6DOq2m8ghHeX1VwhkzermoXTTkR5aheYvmKcF3icXkLMHjNwEHb0R71DEftIBiaEh34sT-SP_4dSNM3O1RYWG3I762ZFBiW3BkqbreddGLeg" class="pv-treasury-item__image">
+      <div class="pv-treasury-item__type-indicator pv-treasury-item__type-indicator-with-desc">
+        <i class="far fa-file-alt"></i>
+      </div>
+  </div>
+  <figcaption class="pv-treasury-item__info">
+    <span class="visually-hidden">MaryamMohamed(UI-Developer).pdf</span>
+    <div class="pv-treasury-item__title--center pv-treasury-item__title">
+        <h5 id="ember90" class="pv-treasury-item__title-text t-14 t-black t-bold lt-line-clamp lt-line-clamp--multi-line ">  MaryamMohamed(UI-Developer).pdf
+
+</h5>
+
+    </div>
+</figcaption>
+</figure>
+</a></div>
+
+  <button class="pv-top-card-section__summary-toggle-button pv-profile-section__card-action-bar artdeco-container-card-action-bar mt4">
+    <span>
+      Show more
+    </span>
+    <i class="fas fa-angle-down"></i>
+  </button>
+</div>
+</section>
+<div id="ember91" class=""><div id="ember92" class=""><!----></div></div>
+</div>
+</div>
+
+
+
+
+
+    <section>
+  <div>
+    <div class="pds-pcm-progress pds-profile-section artdeco-container-card ">    
+      <header class="display-flex justify-space-between full-width mb4">
+
+      <h2 class="inline-block t-20 t-black--light t-normal pr6">
+        Profile Strength:&nbsp;<strong class="t-20 t-black t-bold">Intermediate</strong>
+      </h2>
+
+      <button class="button-tertiary-medium-round-muted "> 
+       <i class="fas fa-angle-down"></i>
+      </button>
+
+    </header>
+
+<div class=""><div class="pds-pcm-completion-meter mb4 pds-completion-meter ">
+  <div class="pds-completion-meter__step"></div>
+<div class="pds-completion-meter__step"></div>
+<div class="pds-completion-meter__step"></div>
+<div class="pds-completion-meter__step"></div>
+<div class="pds-completion-meter__step">
+<div class="mb4 pds-pcm-progress-icon__wrapper ">
+<button class="pds-completion-meter__icon pds-completion-meter__icon--second-gradient Elevation-2dp">
+  <i class="fas fa-check"></i>
+</button>
+</div> 
+</div>
+<div class="pds-completion-meter__step"></div>
+<div class="pds-completion-meter__step">
+<div class="mb4 pds-pcm-progress-icon__wrapper ">
+<button class="pds-completion-meter__icon pds-completion-meter__icon--last-child pds-completion-meter__icon--third-gradient-animate-out Elevation-2dp">
+  <i class="far fa-star"></i>
+</button>
+</div> 
+</div>
+</div></div>
+</div></div>
+</section>
+
+
+<section>
+  <div class="pv-deferred-area ">
+    <div class="pv-deferred-area__content">
+    <section class="pv-profile-section pv-dashboard-section artdeco-container-card ">
+      <div class="pv-dashboard-section__header display-flex">
+  <div class="pv-dashboard-section__title-wrapper">
+    <h2 class="pv-dashboard-section__title">Your Dashboard</h2>
+    <h3 class="pv-dashboard-section__subtitle">Private to you</h3>
+  </div>
+
+</div>
+
+<div class="pv-dashboard-section__card pv-dashboard-section__analytics artdeco-container-card Elevation-0dp">
+<a href="#" class="pv-dashboard-section__card-action pv-dashboard-section__metric profile-views ">   
+ <span class="pv-dashboard-section__metric-count block">68</span> 
+ <span class="pv-dashboard-section__metric-text">Who viewed your profile</span>
+</a>
+<a href="#" class="pv-dashboard-section__card-action pv-dashboard-section__metric update-views ">    
+  <span class="pv-dashboard-section__metric-count block">0</span> 
+<span class="pv-dashboard-section__metric-text">Article views</span>
+</a>
+<a href="#" class="pv-dashboard-section__card-action pv-dashboard-section__metric search-appearances ">    
+  <span class="pv-dashboard-section__metric-count block">41</span> 
+  <span class="pv-dashboard-section__metric-text">Search appearances</span>
+</a></div>
+
+<div class="pv-dashboard-section__card pv-dashboard-section__ctas artdeco-container-card Elevation-0dp">
+<a href="#" class="pv-dashboard-section__card-action pv-dashboard-section__cta career-advice block p3 ">  
+  <i class="far fa-user pv-dashboard-section__cta-icon"></i>
+      <h4 class="pv-dashboard-section__cta-title t-14 t-black t-bold ml6">Career Advice</h4>
+      <p class="js-pv-dashboard-section-career-advice-status-label t-14 t-black t-normal ml6 inline">Participate in the career advice platform:</p>
+      <span class="js-pv-dashboard-section-career-advice-label label-16dp  mb2">
+        Off
+      </span>
+      <p class="pv-dashboard-section__cta-subtitle t-12 t-black--light t-normal ml6">Get career advice by conversing with other LinkedIn users who are leaders in their fields</p>
+</a>
+<a href="#" class="pv-dashboard-section__card-action pv-dashboard-section__cta career-interests relative block p3 ">     
+ <i class="fas fa-briefcase pv-dashboard-section__cta-icon"></i>
+      <h4 class="pv-dashboard-section__cta-title pv-dashboard-section__cta-title--no-space t-14 t-black t-bold ml6">Career interests</h4>
+      <p class="t-14 t-black t-normal ml6 inline">Let recruiters know you’re open:</p>
+      <span class="js-pv-dashboard-section-career-interests-label label-16dp label-16dp-success mb2">
+        On
+      </span>
+      <p class="pv-dashboard-section__cta-subtitle t-12 t-black--light t-normal ml6">Choose the types of opportunities you’d like to be connected with</p>
+</a>
+</div>
+</section>
+  </div>
+</div>
+</section>
+
+
+
+
+<section>
+  <div class="pv-oc">                
+    <span class="background-details">
+      <section class="pv-profile-section pv-profile-section--reorder-enabled background-section artdeco-container-card ">
+      <div class="pv-profile-section-pager ">   
+       <section class="pv-profile-section experience-section ">
+        <header class="pv-profile-section__card-header">
+  <h2 class="pv-profile-section__card-heading t-20 t-normal">
+    Experience
+  </h2>
+
+<a href="#" class="pv-profile-section__header-add-action add-position " data-toggle="modal" data-target="#myModal">     
+ <i class="fas fa-plus li-icon"></i>
+</a>
+<!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Add experience</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>Title *</label>
+              <input type="text" class="form-control" placeholder="EX: Web Developer">
+            </div>
+            <div class="form-group">
+              <label>Company *</label>
+              <input type="text" class="form-control" placeholder="EX: Microsoft">
+            </div>
+            <div class="form-group">
+              <label>Location *</label>
+              <input type="text" class="form-control" placeholder="EX: London">
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Start Date *</label>
+                  <select class="form-control">
+                    <option>Month</option>
+                  </select>
+                  <select class="form-control">
+                    <option>Year</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>End Date *</label>
+                  <select class="form-control">
+                    <option>Month</option>
+                  </select>
+                  <select class="form-control">
+                    <option>Year</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Save</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+</header>
+
+  <ul class="pv-profile-section__section-info section-info pv-profile-section__section-info--has-more">
+<div class="pv-entity__position-group-pager pv-profile-section__list-item ">       
+ <li class="pv-profile-section__card-item-v2 pv-profile-section pv-position-entity ">    
+  <div class="pv-entity__actions">
+<a href="#" class="pv-profile-section__edit-action pv-profile-section__hoverable-action ">       
+<i class="fas fa-pencil-alt li-icon"></i>
+</a>
+</div>
+<a href="#" class="">      
+  <div class="pv-entity__logo company-logo">
+  <img class="lazy-image pv-entity__logo-img pv-entity__logo-img EntityPhoto-square-5 ghost-company loaded" alt="freelancer" src="img/download1.gif">
+</div>
+<div class="pv-entity__summary-info pv-entity__summary-info--background-section ">
+  <h3 class="t-16 t-black t-bold">UI Developer</h3>
+
+  <h4 class="t-16 t-black t-normal">
+    <span class="pv-entity__secondary-title">freelancer</span>
+  </h4>
+
+    <div class="display-flex">
+    <h4 class="pv-entity__date-range t-14 t-black--light t-normal">
+      <span>May 2018 – Present</span>
+    </h4>
+      <h4 class="t-14 pv-entity__date-range pv-entity__date-range2 t-black--light t-normal">
+        <span class="pv-entity__bullet-item-v2">10 mos</span>
+      </h4>
+  </div>
+
+  <h4 class="pv-entity__location t-14 t-black--light t-normal block">
+    <span>Egypt</span>
+  </h4>
+
+</div>
+
+</a>
+</li>
+</div>
+</ul>
+
+  <div class="pv-experience-section__see-more pv-profile-section__actions-inline ">
+    <button class="pv-profile-section__see-more-inline pv-profile-section__text-truncate-toggle link" >
+      Show 3 more experiences
+<i class="fas fa-angle-down"></i>
+</button>
+
+</div>
+</section>
+
+</div>
+<div class="pv-profile-section-pager ">    
+  <section class="pv-profile-section education-section ">
+    <header class="pv-profile-section__card-header">
+  <h2 class="pv-profile-section__card-heading pv-profile-section__card-heading2 t-20 t-black t-normal">
+    Education
+  </h2>
+
+<a href="#" class="pv-profile-section__header-add-action add-education " data-toggle="modal" data-target="#myEducation">      
+   <i class="fas fa-plus li-icon"></i>
+</a>
+<!-- The Modal -->
+  <div class="modal" id="myEducation">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Add education</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>School *</label>
+              <input type="text" class="form-control" placeholder="EX: Boston university">
+            </div>
+            <div class="form-group">
+              <label>Degree</label>
+              <input type="text" class="form-control" placeholder="EX: Bachelor's">
+            </div>
+            <div class="form-group">
+              <label>Field Of Study</label>
+              <input type="text" class="form-control" placeholder="EX: Bussiness">
+            </div>
+            <div class="form-group">
+              <label>Grade</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Activities and societies</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>From Year</label>
+                  <select class="form-control">
+                    <option>Year</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>To Year (or expected)</label>
+                  <select class="form-control">
+                    <option>Year</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Save</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<ul class="pv-profile-section__section-info pv-profile-section__section-info-padding section-info pv-profile-section__section-info--has-no-more ">
+  <li class="pv-profile-section__sortable-item pv-profile-section__section-info-item relative pv-profile-section__sortable-item--v2 pv-profile-section__list-item sortable-item ">        
+    <div class="pv-profile-section__sortable-card-item pv-education-entity pv-profile-section__card-item ">  
+      <div class="pv-entity__actions">
+<a href="#" class="pv-profile-section__edit-action pv-profile-section__hoverable-action ">     
+ <i class="fas fa-pencil-alt li-icon"></i>
+</a>
+  </div>
+
+<a href="#" class="">    
+  <div class="pv-entity__logo">
+  <img class="lazy-image pv-entity__logo-img pv-entity__logo-img EntityPhoto-square-4 loaded" alt="Information Technology Institute (ITI)" src="https://media.licdn.com/dms/image/C560BAQGK3uuhQer46g/company-logo_400_400/0?e=1557964800&amp;v=beta&amp;t=gxgmSw45eEor92yjr-AEG0ONRBO376yuD8u87Pd90VQ">
+</div>
+
+<div class="pv-entity__summary-info pv-entity__summary-info--background-section">
+  <div class="pv-entity__degree-info">
+    <h3 class="pv-entity__school-name t-16 t-black t-bold">Information Technology Institute (ITI)</h3>
+
+<p class="pv-entity__secondary-title pv-entity__fos pv-entity__secondary-title t-14 t-black--light t-normal">
+        <span class="visually-hidden">Field Of Study</span>
+        <span class="pv-entity__comma-item">Enterprise &amp; Web Apps (Microsoft) Track</span>
+      </p>
+</div>
+
+    <p class="pv-entity__dates t-14 t-black--light t-normal">
+      <span class="visually-hidden">Dates attended or expected graduation</span>
+      <span>
+            <time>2018</time> – <time>2019</time>
+      </span>
+    </p>
+
+</div>
+
+</a>
+</div>
+
+</li>
+
+</ul>
+</section>
+
+
+</div>
+<div class="pv-profile-section-pager ">      
+  <section class="pv-profile-section pv-profile-section--certifications-section ">
+    <header class="pv-profile-section__card-header">
+  <h2 class="pv-profile-section__card-heading t-20 pv-profile-section__card-heading2">
+    Licenses &amp; Certifications
+  </h2>
+
+<a href="#" class="pv-profile-section__header-add-action add-certification " data-toggle="modal" data-target="#myCertifications">      
+   <i class="fas fa-plus li-icon"></i>
+</a>
+<!-- The Modal -->
+  <div class="modal" id="myCertifications">
+    <div class="modal-dialog modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h1 class="modal-title">Add licenses & certifications</h1>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label>Name *</label>
+              <input type="text" class="form-control" placeholder="EX: cisco">
+            </div>
+            <div class="form-group">
+              <label>Issuing Organization *</label>
+              <input type="text" class="form-control" placeholder="EX: Bachelor's">
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Issue Date</label>
+                  <select class="form-control">
+                    <option>Month</option>
+                  </select>
+                  <select class="form-control">
+                    <option>Year</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Expiration Date</label>
+                  <select class="form-control">
+                    <option>Month</option>
+                  </select>
+                  <select class="form-control">
+                    <option>Year</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Credential ID</label>
+              <input type="text" class="form-control" placeholder="EX: Bussiness">
+            </div>
+            <div class="form-group">
+              <label>Credential URL</label>
+              <input type="text" class="form-control">
+            </div>
+          </form>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-dismiss="modal">Save</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</header>
+
+<ul class="pv-profile-section__section-info pv-profile-section__section-info-padding section-info pv-profile-section__section-info--has-more">
+    <li class="pv-profile-section__sortable-item pv-certification-entity pv-profile-section__card-item ">  
+      <div class="pv-entity__actions">
+<a href="#" class="pv-profile-section__edit-action pv-profile-section__hoverable-action ">      
+  <i class="fas fa-pencil-alt li-icon"></i>
+</a>  
+</div>
+
+  <div class="pv-entity__logo">
+  <img class="lazy-image pv-entity__logo-img EntityPhoto-square-4 ghost-company loaded" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+</div>
+
+<div class="pv-entity__summary-info pv-entity__summary-info--background-section">
+  <div>
+    <h3 class="t-16 t-bold"> Adobe Photoshop CS6 </h3>
+
+      <p class="t-14">
+        <span class="visually-hidden">Issuing authority</span>
+        <span>graphics academy</span>
+      </p>
+  </div>
+</div>
+
+
+  <div class="pv-entity__extra-details pv-certifications__extra-details">
+<a target="_blank" href="https://goo.gl/FxRdhZ" class="t-14 t-bold "> See Credential</a>  
+</div>
+</li>
+
+</ul>
+
+  <div class="pv-profile-section__actions-inline ">
+    <button class="pv-profile-section__see-more-inline pv-profile-section__text-truncate-toggle link">Show more
+<i class="fas fa-angle-down"></i>
+</button>
+</div>
+</section>
+</div>
+</section>
+</span>
+</div>
+</section>
+
+
+
+
+<section>
+  <div class="pv-deferred-area "> 
+   <div class="pv-deferred-area__content">
+    <section class="pv-profile-section pv-skill-categories-section artdeco-container-card ">
+<h2 class="pv-profile-section__card-heading t-20 t-black t-normal inline-block">
+  Skills &amp; Endorsements
+</h2>
+<div class=" new-skill">
+    <a href="#" class="pv-skills-section__add-text button-tertiary-medium-muted ">Add a new skill</a>
+    <a href="#" class="pv-profile-section__edit-action ">   
+        <i class="fas fa-pencil-alt li-icon"></i>
+  </a>
+  </div>
+<ol class="pv-skill-categories-section__top-skills pv-profile-section__section-info section-info pb4">
+  <li class="pv-skill-category-entity__top-skill pv-skill-category-entity pb3 pt4 pv-skill-endorsedSkill-entity relative ">
+
+<div class="pv-skill-category-entity__skill-wrapper">
+  <div class="display-flex align-items-center flex-grow-1">
+    <p class="pv-skill-category-entity__name  tooltip-container">
+<a href="#" class="display-block full-width ">          
+  <span class="pv-skill-category-entity__name-text t-16 t-black t-bold">CSS</span>
+</a>
+</p>
+
+<a href="#" class=" pv-skill-category-entity__endorsement-count-a">          
+  <span class="visually-hidden">See 17 endorsements for Cascading Style Sheets (CSS)</span>
+  <span class="pv-skill-category-entity__endorsement-count t-14 t-black--light t-normal">17</span>
+</a>
+  </div>
+</div>
+
+    <ul class="pv-skill-category-entity__highlights-list  ">
+        <li class="mn1 pv-skill-entity__highlight-entity ">
+<div class="pv-skill-entity__logo inline-block">
+  <img class="lazy-image EntityPhoto-square-1 pv-skill-entity__logo-img loaded" alt="" height="32" width="32" src="https://media.licdn.com/dms/image/C560BAQH_EWIQssYNQQ/company-logo_100_100/0?e=1557964800&amp;v=beta&amp;t=PAs1Z04nH8sB5AqqCRHgWRMhxgu0lU-8LomJxLsh9-4">
+</div>
+
+<div class="pv-skill-entity__highlight-text inline-block">
+  <p>
+<a href="#" class="pv-skill-entity__highlight-link t-14 t-black--light t-normal ">      
+  Endorsed by <span class="custom-highlight t-bold">2 of maryam’s colleagues at TIEC</span>
+</a>  
+</p>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+
+<div class="">
+  <button class="pv-profile-section__card-action-bar pv-skills-section__additional-skills artdeco-container-card-action-bar" aria-controls="skill-categories-expanded">
+    <span aria-hidden="true">Show more</span>
+    <span class="visually-hidden">Show all of maryam’s skills</span>
+    <i class="fas fa-angle-down"></i>
+</button>
+</div>
+</section>
+  </div>
+</div>
+</section>
+
+
+
+
+
+
+<section>
+  <div class="">                
+    <section class="pv-profile-section pv-accomplishments-section artdeco-container-card ">
+      <header class="card-header clearfix">
+  <h2 class="card-heading t-20 t-black t-normal fl">Accomplishments</h2>
+
+    <div class="dropdown pv-accomplishments-dropdown fr closed ">
+      <button class="dropdown-trigger button-tertiary-medium-round add-action ">    
+        <i class="fas fa-plus li-icon"></i>
+     </button>
+</div>
+</header>
+
+<div class="">    
+  <section class="accordion-panel pv-profile-section pv-accomplishments-block courses ">
+<h3 class="pv-accomplishments-block__count t-32 t-black t-normal pr3">
+  <span class="visually-hidden">maryam has 8 courses</span>
+  <span>8</span>
+</h3>
+
+<div class="pv-accomplishments-block__content break-words">
+  <h3 class="pv-accomplishments-block__title">Courses</h3>
+
+<button class="pv-accomplishments-block__expand pv-accomplishments-block__expand2 artdeco-button artdeco-button--circle artdeco-button--1 artdeco-button--tertiary ">  
+     <i class="fas fa-angle-down"></i>
+</button>
+
+  <div class="pv-accomplishments-block__list-container">
+      <ul class="pv-accomplishments-block__summary-list t-14 t-black--light t-normal ">
+          <li class="pv-accomplishments-block__summary-list-item">English at GateWay Center</li>
+          <li class="pv-accomplishments-block__summary-list-item">Innovation &amp; Entrepreneurship training at Technology innovation &amp; entrepreneurship center (TIEC)</li>
+          <li class="pv-accomplishments-block__summary-list-item">Social Media &amp; Design at MSP Tech Club Benha university</li>
+          <li class="pv-accomplishments-block__summary-list-item">Summer training (C++) at  Benha Faculty of computer and informatics (BFCI)</li>
+          <li class="pv-accomplishments-block__summary-list-item">Summer training (Cloud Application Developer Mastery) at  Benha Faculty of computer and informatics (BFCI)</li>
+          <li class="pv-accomplishments-block__summary-list-item">Summer training (HTML, CSS, JQuery, Php) at BFCI</li>
+          <li class="pv-accomplishments-block__summary-list-item">front-end web development diploma at amit learning center</li>
+          <li class="pv-accomplishments-block__summary-list-item">full stack web development diploma at route center</li>
+      </ul>
+  </div>
+</div>
+</section>
+</div>
+<div class="">    
+  <section class="accordion-panel pv-profile-section pv-accomplishments-block organizations ">
+<h3 class="pv-accomplishments-block__count t-32 t-black t-normal pr3">
+  <span>4</span>
+</h3>
+
+<div class="pv-accomplishments-block__content break-words">
+  <h3 class="pv-accomplishments-block__title">Organizations</h3>
+
+  <button class="pv-accomplishments-block__expand2 pv-accomplishments-block__expand artdeco-button artdeco-button--circle artdeco-button--1 artdeco-button--tertiary ">  
+     <i class="fas fa-angle-down"></i>
+</button>
+
+  <div class="pv-accomplishments-block__list-container">
+      <ul class="pv-accomplishments-block__summary-list t-14 t-black--light t-normal ">
+          <li class="pv-accomplishments-block__summary-list-item"> union BFCI</li>
+          <li class="pv-accomplishments-block__summary-list-item">MSP Tech Club Benha university</li>
+          <li class="pv-accomplishments-block__summary-list-item">Technoship Benha university</li>
+          <li class="pv-accomplishments-block__summary-list-item">positive student at Benha university</li>
+      </ul>
+  </div>
+</div>
+</section>
+</div>
+<div class="">    
+  <section class="accordion-panel pv-profile-section pv-accomplishments-block projects ">
+<h3 class="pv-accomplishments-block__count t-32 t-black t-normal pr3">
+  <span>3</span>
+</h3>
+
+<div class="pv-accomplishments-block__content break-words">
+  <h3 class="pv-accomplishments-block__title">Projects</h3>
+
+  <button class="pv-accomplishments-block__expand2 pv-accomplishments-block__expand artdeco-button artdeco-button--circle artdeco-button--1 artdeco-button--tertiary "> 
+   <i class="fas fa-angle-down"></i></button>
+
+  <div class="pv-accomplishments-block__list-container">
+      <ul class="pv-accomplishments-block__summary-list t-14 t-black--light t-normal ">
+          <li class="pv-accomplishments-block__summary-list-item"> Data Base Project</li>
+          <li class="pv-accomplishments-block__summary-list-item">System Analysis</li>
+          <li class="pv-accomplishments-block__summary-list-item">Web Design Projects</li>
+      </ul>
+  </div>
+</div>
+</section>
+
+
+</div>
+<div class="">    
+  <section class="accordion-panel pv-profile-section pv-accomplishments-block languages ">
+<h3 class="pv-accomplishments-block__count t-32 t-black t-normal pr3">
+  <span>2</span>
+</h3>
+
+<div class="pv-accomplishments-block__content break-words">
+  <h3 class="pv-accomplishments-block__title">Languages</h3>
+  <button class="pv-accomplishments-block__expand2 pv-accomplishments-block__expand artdeco-button artdeco-button--circle artdeco-button--1 artdeco-button--tertiary ">  
+    <i class="fas fa-angle-down"></i>
+</button>
+
+  <div class="pv-accomplishments-block__list-container">
+      <ul class="pv-accomplishments-block__summary-list t-14 t-black--light t-normal ">
+          <li class="pv-accomplishments-block__summary-list-item">Arabic</li>
+          <li class="pv-accomplishments-block__summary-list-item">English</li>
+      </ul>
+  </div>
+</div>
+</section>
+
+
+</div>
+<div class="">    
+  <section class="accordion-panel pv-profile-section pv-accomplishments-block publications ">
+<h3 class="pv-accomplishments-block__count t-32 t-black t-normal pr3">
+  <span>1</span>
+</h3>
+
+<div class="pv-accomplishments-block__content break-words">
+  <h3 class="pv-accomplishments-block__title">Publication</h3>
+  <button class="pv-accomplishments-block__expand2 pv-accomplishments-block__expand artdeco-button artdeco-button--circle artdeco-button--1 artdeco-button--tertiary "> 
+  <i class="fas fa-angle-down"></i>
+</button>
+
+  <div class="pv-accomplishments-block__list-container">
+      <ul class="pv-accomplishments-block__summary-list t-14 t-black--light t-normal ">
+          <li class="pv-accomplishments-block__summary-list-item">My Portfolio</li>
+      </ul>
+  </div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</section>
+
+
+
+  </div>
+</section>
+
+
+
+
+<footer class="nav-footer nav-footer--is-expanded nav-footer--static ">
+  <div class="">  
+  <div class="nav-footer__container">
+    <div class="nav-footer__inner ">
+        <figure class="mb3">
+          <span class="nav-footer__inner-span">Linked</span>
+          <img class="nav-footer__inner-img" src="img/Capture.PNG">
+        </figure>
+
+        <div class="nav-footer__content">
+          <nav class="nav-footer__resources">
+            <ul class="nav-footer__resources-section mb2">
+                <li class="nav-footer__resources-item nav-footer__resources-item--about">
+                  <a target="_blank" href="#" class="">                      
+                    <span>About</span>
+                  </a>               
+               </li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--talent-solutions">
+                  <a target="_blank" href="#" class="">                      
+                    <span>Talent Solutions</span>
+                  </a>                
+                </li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--community-guidelines">
+                    <a target="_blank" href="https://www.linkedin.com/help/linkedin/answer/34593" class="">                    
+                      <span>Community Guidelines</span>
+                    </a>                
+                </li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--careers">
+<a target="_blank" href="#" class="">                      
+  <span>Careers</span>
+</a>                
+</li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--marketing-solutions">
+                  <a target="_blank" href="#" class="">                      
+                    <span>Marketing Solutions</span>
+                  </a>                
+               </li>
+               <li class="nav-footer__resources-item nav-footer__resources-item--marketing-solutions">
+                  <a target="_blank" href="#" class="">                      
+                    <span>Privacy &amp; Terms</span>
+                  </a>                
+               </li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--advertising-solutions">
+<a target="_blank" href="#" class=""><span>Advertising</span></a>               
+ </li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--sales-solutions">
+                  <a target="_blank" href="#" class=""><span>Sales Solutions</span></a>                
+                </li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--sales-solutions">
+                  <a target="_blank" href="#" class=""><span>Send feedback</span></a>                
+                </li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--mobile">
+<a target="_blank" href="#" class="">                      
+  <span>Mobile</span>
+</a>                
+</li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--small-business">
+<a target="_blank" href="#" class=""><span>Small Business</span></a>                
+</li>
+                <li class="nav-footer__resources-item nav-footer__resources-item--safety-center">
+<a target="_blank" href="#" class=""><span>Safety Center</span></a>                
+</li>
+            </ul>
+          </nav>
+
+          <div class="nav-footer__actions">
+            <ul class="nav-footer__actions-list">
+                <li class="nav-footer__actions-list-item">
+                  <i class="far fa-question-circle"></i>
+                  <div class="nav-footer__action-container">
+<a target="_blank" href="#" class="t-14 t-black--light t-bold ">Questions?</a>                   
+<p class="nav-footer__label t-12 t-black--light">Visit our Help Center.</p>
+                  </div>
+                </li>
+                <li class="nav-footer__actions-list-item">
+                  <i class="fas fa-cog"></i>
+                  <div class="nav-footer__action-container">
+<a target="_blank" href="https://www.linkedin.com/psettings/" class="t-14 t-black--light t-bold ">                        Manage your account and privacy.
+</a>                    
+<p class="nav-footer__label t-12 t-black--light">Go to your Settings.</p>
+                  </div>
+                </li>
+            </ul>
+            <div class="nav-footer__language-selection">
+              <label for="globalfooter-select_language" class="t-12 t-black--light t-normal nav-footer__label mb1 mt0">
+                Select Language
+              </label>
+              <select class="nav-footer__language-selection-dropdown t-12 t-black--light t-bold">
+                <option value="en_US" lang="en-US">English (English)</option>
+                <option value="ar_AE" lang="ar-AE">العربية (Arabic)</option>
+            </select>
+            </div>
+          </div>
+        </div>
+        <p class="t-12 t-black--light t-normal text-align-left clear-both">
+          LinkedIn Corporation © 2019
+        </p>
+    </div>
+  </div>
+</div>
+</footer>
+
+
+
+
+
+<div class="container chatbox">
+  <div class="row">
+      <div class="chatbox chatbox22 chatbox--tray">
+    <div class="chatbox__title">
+        <h5><a href="javascript:void()">Leave a message</a></h5>
+        <!--<button class="chatbox__title__tray">
+            <span></span>
+        </button>-->
+        <button class="chatbox__title__close">
+            <span>
+                <svg viewBox="0 0 12 12" width="12px" height="12px">
+                    <line stroke="#FFFFFF" x1="11.75" y1="0.25" x2="0.25" y2="11.75"></line>
+                    <line stroke="#FFFFFF" x1="11.75" y1="11.75" x2="0.25" y2="0.25"></line>
+                </svg>
+            </span>
+        </button>
+    </div>
+    <div class="chatbox__body">
+        <div class="chatbox__body__message chatbox__body__message--left">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--right">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--left">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--right">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--left">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+    </div>
+    <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_set_height" placeholder="Type your message here..." tabindex="0" dir="ltr" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" contenteditable="true" />
+            
+                        <span class="input-group-btn">
+                            <button class="btn bt_bg btn-sm" id="btn-chat">
+                                Send</button>
+                        </span>
+                    </div>
+                </div>
+</div>
+      
+  </div>
+  </div>
+
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

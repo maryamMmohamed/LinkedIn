@@ -1,0 +1,91 @@
+.authentication-outlet {
+    min-width: 1188px;
+    margin-top: 52px;
+}
+.neptune-grid {
+    width: 1128px;
+    box-sizing: content-box;
+    padding: 0 32px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+.org-page-create-portal::before {
+    background: linear-gradient(180deg,#fff 0,#e6f7ff 100%);
+    bottom: 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+}
+.org-page-create-portal__organizations-header {
+    padding: 48px 0 16px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+.t-light {
+    font-weight: 100;
+}
+.org-page-create-portal__organization-types{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+    padding-top: 40px;
+}
+.org-page-create-portal__organization-btn {
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px #e1e9ee;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    max-width: 254px;
+    overflow: hidden;
+    padding: 24px 12px;
+    position: relative;
+    width: 100%;
+    border: 0;
+    background: none;
+}
+.org-page-create-portal__organization-btn:hover {
+    box-shadow: 0 0 0 3px #65c3e8;
+}
+.industry-56 {
+    background-image: url(https://static.licdn.com/sc/h/b8ynfp83t8oo25ebsmx6pys8l);
+}
+.illustration-56 {
+    height: 56px;
+    width: 56px;
+}
+.full-width {
+    width: 100%;
+}
+.company-buildings-56 {
+    background-image: url(https://static.licdn.com/sc/h/10mkauyey7dtl32t1ud22tw0q);
+}
+.computer-jobs-56 {
+    background-image: url(https://static.licdn.com/sc/h/5s5v4wfhsaqsqookifatq5bpe);
+}
+.school-building {
+    background-image: url(https://static.licdn.com/sc/h/a5h55j98dwpmv6emgow8enpia);
+}
+.org-page-create-portal__examples {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.org-page-create-portal__animated-example--desktop {
+    height: 485px;
+    width: 830px;
+}
+.org-page-create-portal__animated-example--mobile {
+    height: 393px;
+    margin-left: -160px;
+    margin-top: 144px;
+    position: relative;
+    width: 190px;
+}

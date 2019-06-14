@@ -1,0 +1,27 @@
+.jobs-boxes{
+	max-width: 1128px;
+    margin: 0 auto;
+}
+.jobs-nav {
+    display: flex;
+    min-height: 62px;
+    border-radius: 2px;
+    margin-bottom: 16px;
+    padding: 0;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15), 0 2px 3px rgba(0,0,0,.2);
+    background-color: #fff;
+    background-clip: padding-box;
+    width: 60%;
+    padding-bottom: 15px;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+span{
+    font-size: 11px;
+}
+p{
+    font-size: 14px;
+    margin: 5px 0;
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Jobs</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+	<link rel="stylesheet" type="text/css" href="css/create_page.css">
+  <link rel="stylesheet" type="text/css" href="css/search_job.css">
+</head>
+<body>
+
+
+  <nav class="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="img/log.PNG">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <form class="navbar-form navbar-center">
+        <input type="search" class="form-control" placeholder="Search">
+    </form>
+
+
+    <ul class="nav-main nav-container display-inline-flex full-height">
+      <li class="nav-item nav-item--feed"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link">
+        <span class="nav-item__icon"><i class="fas fa-home"></i></span> <span class="nav-item__title">Home</span></a>
+      </li>
+      <li class="nav-item nav-item--mynetwork"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-users"></i></span><span class="nav-item__title">My Network</span></a>
+      </li>
+      <li class="nav-item nav-item--jobs"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-briefcase"></i></span> <span class="nav-item__title">Jobs</span></a>
+      </li>
+      <li class="nav-item nav-item--messaging"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-comment-alt"></i></span> <span class="nav-item__title">Messaging</span></a></li>
+      <li class="nav-item nav-item--notifications"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__badge"><span aria-hidden="true" class="nav-item__badge-count">6</span><span class="visually-hidden">6 new notifications.</span></span><span class="nav-item__icon"><i class="fas fa-bell"></i></span> <span class="nav-item__title">Notifications</span></a>
+      </li>
+      <li class="nav-item nav-item--profile"> <div class="nav-item__content">
+      <div class="dropdown closed ">
+        <button id="img-dropdown" class="nav-item__link dropdown-trigger">
+          <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-item__profile-member-photo nav-item__icon" alt="maryam mohamed" height="24" width="24">
+    <div class="nav-item__title-container">
+      <span class="nav-item__title nav-item__dropdown-trigger--title">Me</span>
+      <i class="fas fa-sort-down"></i>
+    </div>
+</button>
+<ul class="dropdown-options nav-settings__dropdown-options dropdown-options--expanded " id="nav-settings__dropdown-options">
+  <li class="nav-settings__topcard nav-settings__no-hover">
+<a href="#" class="nav-settings__view-profile-link block clearfix active "> 
+       <div class="nav-settings__member nav-settings__block">
+          <div class="nav-settings__member-photo-container">
+            <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-settings__member-photo EntityPhoto-circle-4" alt="maryam mohamed" height="70" width="70">
+          </div>
+
+          <div class="nav-settings__member-info-container">
+            <h3 class="nav-settings__member-name t-16 t-black t-bold">
+              maryam mohamed
+            </h3>
+            <h4 class="nav-settings__member-occupation t-14 t-black--light t-normal">
+              Student at Information Technology Institute (ITI)
+            </h4>
+          </div>
+        </div>
+
+        <div class="nav-settings__linkcard nav-settings__block">
+          <span class="nav-settings__linkcard-link button-tertiary-medium">
+            View profile
+          </span>
+        </div>
+</a>    
+</li>
+    <li class="nav-settings__dropdown-options--account nav-settings__dropdown-options nav-settings__no-hover">
+      <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Account</h5>
+        <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Settings &amp; Privacy</a>          
+            </li>
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Language</a>            
+            </li>
+        </ul>
+    </li>
+
+      <li class="nav-settings__dropdown-options--help nav-settings__dropdown-options nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Need Help?</h5>
+        <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+            <button class="nav-dropdown__action-button t-14 t-black--light t-normal block">
+              Open Quick Help
+            </button>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-settings__dropdown-options--manage nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Manage</h5>
+          <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a class="nav-settings__manage-link nav-settings__view-activity-link block ">Posts &amp; Activity</a></li>
+
+              <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+                <a target="_blank" href="#" class="block nav-settings__manage-link ">Job postings</a> 
+              </li>
+          </ul>
+      </li>
+    <li class="nav-settings__dropdown-options--actions nav-settings__no-hover">
+      <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item nav-dropdown__action t-14 t-black t-bold">
+            <a href="#" class="block ">Sign out</a>
+          </li>
+      </ul>
+    </li>
+
+</ul>
+</div>
+    </div>
+</li>
+<li id="app-launcher-nav-item" class="nav-item nav-item--app-launcher">
+  <div id="ember32" class="nav-item__content ">
+    <button class="nav-item__link dropdown-trigger">
+  <i class="fas fa-grip-horizontal"></i>
+  <div class="nav-item__title-container">
+    <span class="nav-item__title nav-item__dropdown-trigger--title">Work</span>
+    <i class="fas fa-sort-down"></i>
+  </div>
+</button>
+</div>
+</li>
+<li id="spotlight-one-nav-item" class="nav-item nav-item--spotlight-one nav-item__spotlight">
+  <div class="nav-item__wormhole">  
+    <div id="ember29" class="nav-item__content t-14 t-black t-normal premium-upsell-link ">
+<a href="#" class="link-without-visited-state nav-item__spotlight-upsell premium-upsell-link--long ">Try Premium Free for 1 Month</a>
+</div>
+  </div>
+</li>
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+<div class="authentication-outlet">
+  <section class="jobs-boxes">
+    
+    <div class="jobs-nav">
+      <ul class="display-flex list-style-none align-items-center mb0 ml5">
+<!---->    <li class="jobs-nav__item">
+<a href="#" class="jobs-nav__item-link display-flex link-without-visited-state t-16 t-black t-normal ">        
+  <i class="fas fa-bell"></i>
+        <span class="t-16 t-black--light t-normal">Track my jobs</span>
+</a>    </li>
+    <li class="jobs-nav__item">
+<a href="#" class="jobs-nav__item-link display-flex link-without-visited-state t-16 t-black t-normal js-career-interests ">       
+<i class="fas fa-pencil-alt"></i>
+        <span class="t-16 t-black--light t-normal">Career interests</span>
+</a>    </li>
+</ul>
+
+<div class="jobs-post t-14 t-black--light t-normal">
+<!---->      <div class="js-post-jobs-btn-label js-post-jobs-btn-label--button mr4 t-16 t-black--light t-normal">
+        Looking for talent?
+      </div>
+
+    <div class="relative">
+<a href="#" class="jobs-post__btn button-secondary-medium link-without-hover-state link-without-visited-state artdeco-button--secondary ">        
+  <i class="fas fa-edit"></i>
+        <span class="t-16 t-bold ">Post a job</span>
+</a>    </div>
+</div>
+</div>
+
+
+
+
+<div class="jobs-box">
+  <div class="jobs-home-soho__search-box-container jobs-home-soho__search-box-container--textured pt4 pb5">
+    <h2 class="t-24 display-flex justify-center pb4">
+      Your dream job’s just a search away…
+    </h2>
+  <div class="jobs-search-box jobs-home-soho__search-box display-flex justify-center full-width block jobs-home-soho__search-box--padded ">
+    <div class="jobs-search-box__input jobs-search-box__input--keyword">
+
+<form class="form-inline">
+  <input type="text" name="" class="form-control" placeholder="Search jobs">
+  <input type="text" name="" class="form-control" placeholder="Search location">
+  <button class="btn btn-info">Search</button>
+</form>
+
+
+</div>
+</div>
+</div>
+</div>
+
+  </section>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Home</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+	<link rel="stylesheet" type="text/css" href="css/page_details.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+
+
+  <nav class="navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="img/log.PNG">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <form class="navbar-form navbar-center">
+        <input type="search" class="form-control" placeholder="Search">
+    </form>
+
+
+    <ul class="nav-main nav-container display-inline-flex full-height">
+      <li class="nav-item nav-item--feed"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link">
+        <span class="nav-item__icon"><i class="fas fa-home"></i></span> <span class="nav-item__title">Home</span></a>
+      </li>
+      <li class="nav-item nav-item--mynetwork"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-users"></i></span><span class="nav-item__title">My Network</span></a>
+      </li>
+      <li class="nav-item nav-item--jobs"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-briefcase"></i></span> <span class="nav-item__title">Jobs</span></a>
+      </li>
+      <li class="nav-item nav-item--messaging"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-comment-alt"></i></span> <span class="nav-item__title">Messaging</span></a></li>
+      <li class="nav-item nav-item--notifications"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__badge"><span aria-hidden="true" class="nav-item__badge-count">6</span><span class="visually-hidden">6 new notifications.</span></span><span class="nav-item__icon"><i class="fas fa-bell"></i></span> <span class="nav-item__title">Notifications</span></a>
+      </li>
+      <li class="nav-item nav-item--profile"> <div class="nav-item__content">
+      <div class="dropdown closed ">
+        <button id="img-dropdown" class="nav-item__link dropdown-trigger">
+          <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-item__profile-member-photo nav-item__icon" alt="maryam mohamed" height="24" width="24">
+    <div class="nav-item__title-container">
+      <span class="nav-item__title nav-item__dropdown-trigger--title">Me</span>
+      <i class="fas fa-sort-down"></i>
+    </div>
+</button>
+<ul class="dropdown-options nav-settings__dropdown-options dropdown-options--expanded " id="nav-settings__dropdown-options">
+  <li class="nav-settings__topcard nav-settings__no-hover">
+<a href="#" class="nav-settings__view-profile-link block clearfix active "> 
+       <div class="nav-settings__member nav-settings__block">
+          <div class="nav-settings__member-photo-container">
+            <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-settings__member-photo EntityPhoto-circle-4" alt="maryam mohamed" height="70" width="70">
+          </div>
+
+          <div class="nav-settings__member-info-container">
+            <h3 class="nav-settings__member-name t-16 t-black t-bold">
+              maryam mohamed
+            </h3>
+            <h4 class="nav-settings__member-occupation t-14 t-black--light t-normal">
+              Student at Information Technology Institute (ITI)
+            </h4>
+          </div>
+        </div>
+
+        <div class="nav-settings__linkcard nav-settings__block">
+          <span class="nav-settings__linkcard-link button-tertiary-medium">
+            View profile
+          </span>
+        </div>
+</a>    
+</li>
+    <li class="nav-settings__dropdown-options--account nav-settings__dropdown-options nav-settings__no-hover">
+      <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Account</h5>
+        <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Settings &amp; Privacy</a>          
+            </li>
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Language</a>            
+            </li>
+        </ul>
+    </li>
+
+      <li class="nav-settings__dropdown-options--help nav-settings__dropdown-options nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Need Help?</h5>
+        <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+            <button class="nav-dropdown__action-button t-14 t-black--light t-normal block">
+              Open Quick Help
+            </button>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-settings__dropdown-options--manage nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Manage</h5>
+          <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a class="nav-settings__manage-link nav-settings__view-activity-link block ">Posts &amp; Activity</a></li>
+
+              <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+                <a target="_blank" href="#" class="block nav-settings__manage-link ">Job postings</a> 
+              </li>
+          </ul>
+      </li>
+    <li class="nav-settings__dropdown-options--actions nav-settings__no-hover">
+      <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item nav-dropdown__action t-14 t-black t-bold">
+            <a href="#" class="block ">Sign out</a>
+          </li>
+      </ul>
+    </li>
+
+</ul>
+</div>
+    </div>
+</li>
+<li id="app-launcher-nav-item" class="nav-item nav-item--app-launcher">
+  <div id="ember32" class="nav-item__content ">
+    <button class="nav-item__link dropdown-trigger">
+  <i class="fas fa-grip-horizontal"></i>
+  <div class="nav-item__title-container">
+    <span class="nav-item__title nav-item__dropdown-trigger--title">Work</span>
+    <i class="fas fa-sort-down"></i>
+  </div>
+</button>
+</div>
+</li>
+<li id="spotlight-one-nav-item" class="nav-item nav-item--spotlight-one nav-item__spotlight">
+  <div class="nav-item__wormhole">  
+    <div id="ember29" class="nav-item__content t-14 t-black t-normal premium-upsell-link ">
+<a href="#" class="link-without-visited-state nav-item__spotlight-upsell premium-upsell-link--long ">Try Premium Free for 1 Month</a>
+</div>
+  </div>
+</li>
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<section class="neptune-grid">
+	<section class="feed-ad__top ad-banner-container is-header-zone ">
+    </section>
+	<aside class="left-rail">
+	<div class="left-rail-container Elevation-2dp mb2">
+          <div class="feed-identity-module profile-rail-card container "><!---->
+<div class="feed-identity-module__actor-meta profile-rail-card__actor-meta break-words">
+  <div class=" feed-identity-module__member-bg-image profile-rail-card__member-bg-image">
+  </div>
+
+<a href="/in/maryammohamedamin/">    
+	<img class="lazy-image loaded feed-identity-module__member-photo profile-rail-card__member-photo EntityPhoto-circle-5" alt="maryam mohamed" height="64" width="64" src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1556150400&amp;v=beta&amp;t=k_hvxL1YRCJ26kpOC034G4it4Wc53qLaa-kCJ0HQwY4">
+</a>
+<a href="/in/maryammohamedamin/" class="tap-target profile-rail-card__actor-link block link-without-hover-visited ">   
+ <span class="t-16 t-black t-bold">
+      maryam mohamed
+    </span>
+</a>
+    <p class="identity-headline t-12 t-black--light t-normal mt1">Student at Information Technology Institute (ITI)</p>
+  </div>
+
+  <div class="feed-identity-module__widgets">
+    <div class="feed-identity-module__entity-list entity-list-wrapper ">
+    	<ul class="entity-list row">
+    <li class=" entity-list-item">
+      <div class="entity-item ">
+      	<button class="full-width">
+  <div class="display-flex align-items-baseline">
+    <div class="text-align-left">
+      <div class="identity-widget-item__headline link-without-visited-state t-12 t-black--light t-bold attributed-text ">
+      	<span class=""><span>Who's viewed your profile</span></span></div>
+<!---->    </div>
+    <div class="t-12 t-black t-bold flex-1 text-align-right">
+        <span class="feed-identity-module__stat link-without-visited-state">
+          66
+        </span>
+    </div>
+  </div>
+</button>
+</div>
+    </li>
+    <li class=" entity-list-item">
+      <div class="entity-item ">
+      	<button class="full-width">
+  <div class="display-flex align-items-baseline">
+    <div class="text-align-left">
+      <div class="identity-widget-item__headline link-without-visited-state t-12 t-black--light t-bold attributed-text ">
+      	<span><span>Connections</span></span></div>
+        <div class="link-without-visited-state t-12 t-black t-bold attributed-text ">
+        	<span><span>Manage your network</span></span></div>
+          </div>
+    <div class="t-12 t-black t-bold flex-1 text-align-right">
+        <span class="feed-identity-module__stat link-without-visited-state">
+          3,445
+        </span>
+    </div>
+  </div>
+</button>
+</div>
+    </li>
+</ul>
+
+</div>
+  </div>
+
+<div class="premium-upsell-link">
+<a href="#">          
+	<p class="t-12 t-black--light t-normal">Access exclusive tools &amp; insights</p>
+    <span class="feed-identity-module__anchored-widget-text--premium-upsell">Try Premium Free for 1 Month</span>
+
+</a></div></div>
+        </div>
+</aside>
+</section>
+
+
+
+
+
+
+
+
+<div class="core-rail">
+      	<div class="share-box__wrapper Elevation-2dp">
+    <div class="display-flex">
+    	<textarea class="share-box__open share-box__open_text-area share-box__trigger p4 hoverable-link-text t-16 t-black--light t-bold">Start a post </textarea>
+      <div class="share-box__trigger button share-media-button tap-target ">
+      	<input class="share-media-button__input ember-text-field visually-hidden" type="file">
+<label class="share-media-button__label mvA share-media-button__label--square ">
+<i class="fas fa-camera"></i>
+</label>
+</div>
+        <div class="share-box__trigger share-box__media-trigger button share-media-button tap-target ">
+        	<input class="share-media-button__input ember-text-field visually-hidden" type="file">
+<label class="share-media-button__label mvA share-media-button__label--square ">
+  <i class="fas fa-video"></i>
+</label>
+</div>
+          <div class="share-box__trigger share-box__media-trigger button share-media-button tap-target ">
+          	<input class="share-media-button__input  ember-text-field visually-hidden" type="file">
+<label class="share-media-button__label mvA share-media-button__label--square">
+    <i class="far fa-file"></i>
+</label>
+</div>
+    </div>
+      <div class="share-box__article-cta t-14 t-black--light t-normal">
+        <a href="#" class="link-without-visited-state hoverable-link-text">Write an article</a> on LinkedIn
+      </div>
+  </div>
+<div class="feed-shared-ghost-list "></div>
+        <div class="sort-dropdown "><div class="dropdown closed "><!--   <hr> --></div>
+</div>
+
+<!---->
+<div class="relative post-div">       
+    <div class="feed-shared-update-v2 mh0 Elevation-2dp relative full-height ">         
+             <div class="display-flex feed-shared-actor display-flex feed-shared-actor--with-control-menu ">
+<div class="feed-shared-actor__meta">
+<div class="row">
+  <div class="col-md-2">
+    <img class="EntityPhoto-circle-3" alt="hosam helmy" src="https://media.licdn.com/dms/image/C5603AQEwx6QqJQWLDA/profile-displayphoto-shrink_800_800/0?e=1556150400&amp;v=beta&amp;t=Juje909Wo6HmCx12Q9Yt4u21YH5z-8HE4EktnWc8nKs">
+  </div>
+  <div class="col-md-10">
+    <a href="#" class="feed-shared-actor__meta-link app-aware-link ">    
+  <h3 class="feed-shared-actor__title t-12 t-black--light t-normal">
+      <span class="feed-shared-actor__name t-14 t-black t-bold hoverable-link-text">
+        <span dir="ltr">hosam helmy</span>
+      </span>
+        <span class="feed-shared-actor__supplementary-actor-info t-14 t-black--light t-normal inline-block">
+          <div class="feed-shared-text-view white-space-pre-wrap break-words ">
+            <span>
+              <span class=""><span> • 1st</span></span>
+          </span></div>
+        </span>
+    </h3>
+
+      <span class="feed-shared-actor__description t-12 t-black--light t-normal">
+        <div class="truncate feed-shared-text-view white-space-pre-wrap break-words ">
+          <span>Mechanical Engineer at SKODA</span></div>
+      </span>
+
+      <span class="feed-shared-actor__sub-description t-12 t-black--light t-normal">
+        <div class="feed-shared-text-view white-space-pre-wrap break-words ">
+          <span><span><span>23m</span></span></span>
+        </div>
+      </span>
+</a>
+  </div>
+</div>
+<p class="feed-shared-actor__sub-description_text">How can curiosity, adaptability and strong communication skills help improve the world around us? Join us and find out. We’re hiring Digital Campaign Specialists to create solutions that spark change. Together we’ll build a better
+</p>
+
+<div class="post-social-media-counts">
+	<span class="post-social-media-counts-span">135 Likes</span>
+	<span class="post-social-media-counts-span">-</span>
+	<span class="post-social-media-counts-span">3 Comments</span>
+</div>
+<!-- Modal -->
+  <div class="modal fade" id="myModal2">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">32 Likes</h4>
+        </div>
+        <div class="modal-body">
+          <ul class="feed-shared-likers-modal__actor-list actor-list "> 
+           <li class="actor-item feed-shared-actor-list__actor">
+<a href="#" class="feed-shared-actor-list__actor-link ">    
+  <div class="actor-image">
+        <div class="feed-shared-avatar-image b0 member ">  
+        	<img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=m-XNvrop_ZRtkL-sMYg-s1G8_BvVfMy-xJKEeTa4nMg" class="avatar member EntityPhoto-circle-3" alt="maryam mohamed">
+</div>
+      </div>
+
+      <div class="profile-link">
+        <h3 class="name">
+          maryam mohamed
+<!---->        </h3>
+        <p class="headline">Student at Information Technology Institute (ITI)</p>
+      </div>
+</a>
+<!----><!----><!---->  </li>
+  <li class="actor-item feed-shared-actor-list__actor">
+<a href="#" class="feed-shared-actor-list__actor-link ">      
+	<div class="actor-image">
+        <div class="feed-shared-avatar-image b0 member ">  
+        	<img src="https://media.licdn.com/dms/image/C4E03AQEQfugsKBBVtA/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=Lu6ENU1HbU9oj7ggZ6JybSirJTrxuD7pkd0lQRsR3AA" class="avatar member EntityPhoto-circle-3" alt="Omar Khairy">
+</div>
+      </div>
+
+      <div class="profile-link">
+        <h3 class="name">
+          Omar Khairy
+            <span class="feed-shared-actor-list__distance-badge distance-badge separator "> 
+<span class="dist-value">2nd</span>
+</span>
+                  </h3>
+        <p class="headline">Engineering Software Developer | BIM Engineer at Building Technology Labs</p>
+      </div>
+      <section class="ml2 p2 feed-shared-actor-list__profile-action">
+        <button class="connect-button connect-button--has-invited button-secondary-medium " disabled="">  
+        	<span >Invited</span>
+</button>
+      </section>
+</a>
+      
+<!----><!---->  </li>
+<li class="actor-item feed-shared-actor-list__actor">
+<a href="#" class="feed-shared-actor-list__actor-link ">     
+ <div class="actor-image">
+        <div class="feed-shared-avatar-image b0 member ">  
+        	<img src="https://media.licdn.com/dms/image/C5603AQHlxtzqcgHJbw/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=owRE40jY1dgyPN75NZLQFLrdTotuO4ZV5JE4--dkHP4" class="avatar member EntityPhoto-circle-3" alt="Mohammed Fathy">
+</div>
+      </div>
+
+      <div class="profile-link">
+        <h3 class="name">
+          Mohammed Fathy
+            <span class="feed-shared-actor-list__distance-badge distance-badge separator "> 
+<span class="dist-value">2nd</span>
+</span>
+                  </h3>
+        <p class="headline">Business Systems Analyst, GIS, MCSD, TOGAF</p>
+      </div>
+      <section class="ml2 p2 feed-shared-actor-list__profile-action">
+        <button class="connect-button button-secondary-medium feed-shared-actor-list__profile-action-connect"><!---->  <span a>Connect</span>
+</button>
+      </section>
+</a>
+      
+<!----><!---->  </li>
+<!----></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="post-social-media">
+	<span class="post-social-media-span" data-toggle="modal" data-target="#myModal2">
+		<i class="far fa-thumbs-up"></i> Like
+	</span>
+	<span class="post-social-media-span">
+		<i class="far fa-comment-alt"></i> Comment
+	</span>
+	<span class="post-social-media-span">
+		<i class="fas fa-share"></i> Share
+	</span>
+</div>
+<!----><!---->          
+<div class="feed-shared-update-v2__comments-container display-flex flex-column">
+ <div class="comments-comment-box comments-comment-box--has-avatar "> 
+  <div  class="comments-comment-box__avatar-image ml0 feed-shared-avatar-image b0 member "> 
+   <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=m-XNvrop_ZRtkL-sMYg-s1G8_BvVfMy-xJKEeTa4nMg" class="avatar member EntityPhoto-circle-1 EntityPhoto-circle-one">
+</div>
+
+<div class="comments-comment-box__form-container flex-grow-1">
+    <form class="comments-comment-box__form">
+    	<textarea class="comments-comment-box__camera-icon button sharing-share-action-media tap-target sharing-subaction-bar__photo-button ">Add Comment</textarea>
+    </form>
+</div>
+
+<!----><!----> 
+<div class="comments-comments-list ">
+<!---->
+      <article class="comments-comments-list__comment-item comments-comment-item ">   
+       <div class="comments-comment-item__options">
+    <time class="comments-comment-item__timestamp t-12 t-black--light t-normal">4h</time>
+
+    <button class="comment-options-trigger">
+  <i class="fas fa-ellipsis-h"></i>
+</button>
+<!---->  </div>
+
+<div class="comments-comment-item__post-meta feed-shared-post-meta is-comment feed-shared-post-meta--is-not-sponsored ">
+	<a href="#" class="tap-target feed-shared-post-meta__actor-link ">    
+		<div class="feed-shared-avatar-image b0 member ">  
+			<div class="presence-entity presence-entity--size-1 ">  
+				<div class="avatar member EntityPhoto-circle-1 presence-entity__image EntityPhoto-circle-1 " style="background-image: url(&quot;https://media.licdn.com/dms/image/C4E03AQFSC4pE_EAUGQ/profile-displayphoto-shrink_800_800/0?e=1556755200&amp;v=beta&amp;t=gdkJK99uCQL1OsD2E01rnnXZ_FamVGPH4l1SGM1GfLw&quot;);">  <span class="visually-hidden">Abdel Rady Raslan</span>
+</div>
+</div>
+</div>
+</a>
+<a href="#" class="feed-shared-post-meta__profile-link t-16 t-black t-bold tap-target ">  
+	<h3 class="feed-shared-post-meta__actor t-12 t-black--light t-normal">
+    <span class=" feed-shared-post-meta__name t-14 t-black t-bold">
+        <span class="hoverable-link-text">Abdel Rady Raslan</span><!---->         
+         <span class="feed-shared-post-meta__distance-badge distance-badge separator ">  
+<span class="dist-value">2nd</span>
+</span>
+        <!---->    </span>
+      <span class="feed-shared-post-meta__headline t-12 t-black--light t-normal">
+        Faculty of Commerce( fourth year)Al Azhar University
+      </span>
+<!----><!----><!----><!----><!----></h3>
+</a>
+<!----></div>
+
+<div class="comments-comment-item-content-body">
+<div class="comments-comment-item__inline-show-more-text feed-shared-inline-show-more-text ">          
+	<p class="comments-comment-item__main-content feed-shared-main-content--comment t-12 t-black t-normal feed-shared-main-content ">
+		<span>Thanks Alot</span><!----></p>
+<!----></div><!----><!---->
+</div>
+
+    <div class="comments-comment-item__social-actions ">
+      <div class="comments-comment-social-bar display-flex ">
+      	<div class="comments-comment-social-bar__action-group ">
+      		<button class="comments-comment-social-bar__action-button t-12 t-black--light t-bold pr3 ml0 hoverable-link-text like-button button like "><!---->
+  <span >Like</span>
+
+</button>
+<button class="comments-comment-social-bar__action-button t-12 t-black--light t-bold pr3 ml0 hoverable-link-text button reply "><!---->
+	<span class="feed-shared-reply-button__text">Reply</span>
+
+</button></div>
+
+<!----></div>
+    </div>
+
+</article>
+    
+<!----></div> 
+<!----><!---->  
+
+</div>
+</div>
+<!----><!---->          
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<!---->
+<div class="relative post-div post-div-img">       
+    <div class="feed-shared-update-v2 mh0 Elevation-2dp relative full-height ">         
+             <div class="display-flex feed-shared-actor display-flex feed-shared-actor--with-control-menu ">
+             <!-- 	<a href="#" class="feed-shared-actor__image app-aware-link ">   
+              <span class="js-feed-shared-actor__avatar">
+      <div class="feed-shared-actor__avatar ivm-image-view-model relative">  
+      	<div class="display-flex ivm-view-attr__img-wrapper ivm-view-attr__img-wrapper--use-img-tag relative"> 
+       <div class="presence-entity presence-entity--size-3 relative"> 
+            <img class="lazy-image ivm-view-attr__img--centered feed-shared-actor__avatar-image EntityPhoto-circle-3 presence-entity__image EntityPhoto-circle-3 loaded" alt="hosam helmy" src="https://media.licdn.com/dms/image/C5603AQEwx6QqJQWLDA/profile-displayphoto-shrink_800_800/0?e=1556150400&amp;v=beta&amp;t=Juje909Wo6HmCx12Q9Yt4u21YH5z-8HE4EktnWc8nKs">
+       </div>
+</div>
+</div>
+    </span>
+</a> -->
+<div class="feed-shared-actor__meta relative">
+  <div class="row">
+  <div class="col-md-2">
+    <img class="EntityPhoto-circle-3" alt="hosam helmy" src="https://media.licdn.com/dms/image/C5603AQEwx6QqJQWLDA/profile-displayphoto-shrink_800_800/0?e=1556150400&amp;v=beta&amp;t=Juje909Wo6HmCx12Q9Yt4u21YH5z-8HE4EktnWc8nKs">
+  </div>
+  <div class="col-md-10">
+   <a href="#" class="feed-shared-actor__meta-link app-aware-link ">    
+  <h3 class="feed-shared-actor__title t-12 t-black--light t-normal">
+      <span class="feed-shared-actor__name t-14 t-black t-bold hoverable-link-text">
+        <span dir="ltr">hosam helmy</span>
+      </span>
+        <span class="feed-shared-actor__supplementary-actor-info t-14 t-black--light t-normal inline-block">
+          <div class="feed-shared-text-view white-space-pre-wrap break-words ">
+            <span>
+              <span class=""><span> • 1st</span></span>
+          </span></div>
+        </span>
+    </h3>
+
+      <span class="feed-shared-actor__description t-12 t-black--light t-normal">
+        <div class="truncate feed-shared-text-view white-space-pre-wrap break-words ">
+          <span>Mechanical Engineer at SKODA</span></div>
+      </span>
+
+      <span class="feed-shared-actor__sub-description t-12 t-black--light t-normal">
+        <div class="feed-shared-text-view white-space-pre-wrap break-words ">
+          <span><span><span>23m</span></span></span>
+        </div>
+      </span>
+</a>
+  </div>
+</div>
+
+<p class="feed-shared-actor__sub-description_text">How can curiosity, adaptability and strong communication skills help improve the world.</p>
+
+<img src="img/post-img.png" class="img-post">
+
+<div class="post-social-media-counts">
+	<span class="post-social-media-counts-span">135 Likes</span>
+	<span class="post-social-media-counts-span">-</span>
+	<span class="post-social-media-counts-span">3 Comments</span>
+</div>
+<div class="post-social-media">
+	<span class="post-social-media-span" data-toggle="modal" data-target="#myModal">
+		<i class="far fa-thumbs-up"></i> Like
+	</span>
+	<span class="post-social-media-span">
+		<i class="far fa-comment-alt"></i> Comment
+	</span>
+	<span class="post-social-media-span">
+		<i class="fas fa-share"></i> Share
+	</span>
+</div>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">32 Likes</h4>
+        </div>
+        <div class="modal-body">
+          <ul class="feed-shared-likers-modal__actor-list actor-list "> 
+           <li class="actor-item feed-shared-actor-list__actor">
+<a href="#" class="feed-shared-actor-list__actor-link ">    
+  <div class="actor-image">
+        <div class="feed-shared-avatar-image b0 member ">  
+        	<img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=m-XNvrop_ZRtkL-sMYg-s1G8_BvVfMy-xJKEeTa4nMg" class="avatar member EntityPhoto-circle-3" alt="maryam mohamed">
+</div>
+      </div>
+
+      <div class="profile-link">
+        <h3 class="name">
+          maryam mohamed
+<!---->        </h3>
+        <p class="headline">Student at Information Technology Institute (ITI)</p>
+      </div>
+</a>
+<!----><!----><!---->  </li>
+  <li class="actor-item feed-shared-actor-list__actor">
+<a href="#" class="feed-shared-actor-list__actor-link ">      
+	<div class="actor-image">
+        <div class="feed-shared-avatar-image b0 member ">  
+        	<img src="https://media.licdn.com/dms/image/C4E03AQEQfugsKBBVtA/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=Lu6ENU1HbU9oj7ggZ6JybSirJTrxuD7pkd0lQRsR3AA" class="avatar member EntityPhoto-circle-3" alt="Omar Khairy">
+</div>
+      </div>
+
+      <div class="profile-link">
+        <h3 class="name">
+          Omar Khairy
+            <span class="feed-shared-actor-list__distance-badge distance-badge separator "> 
+<span class="dist-value">2nd</span>
+</span>
+                  </h3>
+        <p class="headline">Engineering Software Developer | BIM Engineer at Building Technology Labs</p>
+      </div>
+      <section class="ml2 p2 feed-shared-actor-list__profile-action">
+        <button class="connect-button connect-button--has-invited button-secondary-medium " disabled="">  
+        	<span >Invited</span>
+</button>
+      </section>
+</a>
+      
+<!----><!---->  </li>
+<li class="actor-item feed-shared-actor-list__actor">
+<a href="#" class="feed-shared-actor-list__actor-link ">     
+ <div class="actor-image">
+        <div class="feed-shared-avatar-image b0 member ">  
+        	<img src="https://media.licdn.com/dms/image/C5603AQHlxtzqcgHJbw/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=owRE40jY1dgyPN75NZLQFLrdTotuO4ZV5JE4--dkHP4" class="avatar member EntityPhoto-circle-3" alt="Mohammed Fathy">
+</div>
+      </div>
+
+      <div class="profile-link">
+        <h3 class="name">
+          Mohammed Fathy
+            <span class="feed-shared-actor-list__distance-badge distance-badge separator "> 
+<span class="dist-value">2nd</span>
+</span>
+                  </h3>
+        <p class="headline">Business Systems Analyst, GIS, MCSD, TOGAF</p>
+      </div>
+      <section class="ml2 p2 feed-shared-actor-list__profile-action">
+        <button class="connect-button button-secondary-medium feed-shared-actor-list__profile-action-connect"><!---->  <span a>Connect</span>
+</button>
+      </section>
+</a>
+      
+<!----><!---->  </li>
+<!----></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+<!----><!---->          
+<div class="feed-shared-update-v2__comments-container display-flex flex-column">
+ <div class="comments-comment-box comments-comment-box--has-avatar "> 
+  <div  class="comments-comment-box__avatar-image ml0 feed-shared-avatar-image b0 member "> 
+   <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1556755200&amp;v=beta&amp;t=m-XNvrop_ZRtkL-sMYg-s1G8_BvVfMy-xJKEeTa4nMg" class="avatar member EntityPhoto-circle-1 EntityPhoto-circle-one">
+</div>
+
+<div class="comments-comment-box__form-container flex-grow-1">
+    <form class="comments-comment-box__form">
+    	<textarea class="comments-comment-box__camera-icon button sharing-share-action-media tap-target sharing-subaction-bar__photo-button ">Add Comment</textarea>
+    </form>
+</div>
+</div>
+</div>
+<!----><!---->          
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+</div>
+
+
+<aside class="feed-right-rail"></aside>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

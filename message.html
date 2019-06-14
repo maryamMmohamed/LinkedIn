@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Messaging</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
+   rel="stylesheet">
+	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/profile.css">
+  <link rel="stylesheet" type="text/css" href="css/message.css">
+  <link rel="stylesheet" type="text/css" href="css/chatbox.css">
+</head>
+<body>
+
+
+  <nav class="navbar">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">
+        <img src="img/log.PNG">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+       <form class="navbar-form navbar-center">
+        <input type="search" class="form-control" placeholder="Search">
+    </form>
+
+
+    <ul class="nav-main nav-container display-inline-flex full-height">
+      <li class="nav-item nav-item--feed"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link">
+        <span class="nav-item__icon"><i class="fas fa-home"></i></span> <span class="nav-item__title">Home</span></a>
+      </li>
+      <li class="nav-item nav-item--mynetwork"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-users"></i></span><span class="nav-item__title">My Network</span></a>
+      </li>
+      <li class="nav-item nav-item--jobs"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-briefcase"></i></span> <span class="nav-item__title">Jobs</span></a>
+      </li>
+      <li class="nav-item nav-item--messaging"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__icon"><i class="fas fa-comment-alt"></i></span> <span class="nav-item__title">Messaging</span></a></li>
+      <li class="nav-item nav-item--notifications"><a href="#" class="nav-item__link nav-item__link--underline js-nav-item-link"><span class="nav-item__badge"><span aria-hidden="true" class="nav-item__badge-count">6</span><span class="visually-hidden">6 new notifications.</span></span><span class="nav-item__icon"><i class="fas fa-bell"></i></span> <span class="nav-item__title">Notifications</span></a>
+      </li>
+      <li class="nav-item nav-item--profile"> <div class="nav-item__content">
+      <div class="dropdown closed ">
+        <button id="img-dropdown" class="nav-item__link dropdown-trigger">
+          <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-item__profile-member-photo nav-item__icon" alt="maryam mohamed" height="24" width="24">
+    <div class="nav-item__title-container">
+      <span class="nav-item__title nav-item__dropdown-trigger--title">Me</span>
+      <i class="fas fa-sort-down"></i>
+    </div>
+</button>
+<ul class="dropdown-options nav-settings__dropdown-options dropdown-options--expanded " id="nav-settings__dropdown-options">
+  <li class="nav-settings__topcard nav-settings__no-hover">
+<a href="#" class="nav-settings__view-profile-link block clearfix active "> 
+       <div class="nav-settings__member nav-settings__block">
+          <div class="nav-settings__member-photo-container">
+            <img src="https://media.licdn.com/dms/image/C4D03AQHCSjY6Xgq8Ow/profile-displayphoto-shrink_100_100/0?e=1555545600&amp;v=beta&amp;t=X8OF8SWRtqjXf2HFOL6A_SYzcWK4b5LXCW8uKhe7wms" class="nav-settings__member-photo EntityPhoto-circle-4" alt="maryam mohamed" height="70" width="70">
+          </div>
+
+          <div class="nav-settings__member-info-container">
+            <h3 class="nav-settings__member-name t-16 t-black t-bold">
+              maryam mohamed
+            </h3>
+            <h4 class="nav-settings__member-occupation t-14 t-black--light t-normal">
+              Student at Information Technology Institute (ITI)
+            </h4>
+          </div>
+        </div>
+
+        <div class="nav-settings__linkcard nav-settings__block">
+          <span class="nav-settings__linkcard-link button-tertiary-medium">
+            View profile
+          </span>
+        </div>
+</a>    
+</li>
+    <li class="nav-settings__dropdown-options--account nav-settings__dropdown-options nav-settings__no-hover">
+      <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Account</h5>
+        <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Settings &amp; Privacy</a>          
+            </li>
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a target="_blank" href="#" class="block ">Language</a>            
+            </li>
+        </ul>
+    </li>
+
+      <li class="nav-settings__dropdown-options--help nav-settings__dropdown-options nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Need Help?</h5>
+        <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+            <button class="nav-dropdown__action-button t-14 t-black--light t-normal block">
+              Open Quick Help
+            </button>
+          </li>
+        </ul>
+      </li>
+
+      <li class="nav-settings__dropdown-options--manage nav-settings__no-hover">
+        <h5 class="nav-dropdown__title nav-settings__dropdown-title t-14 t-black t-bold">Manage</h5>
+          <ul class="nav-settings__dropdown-items">
+            <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+              <a class="nav-settings__manage-link nav-settings__view-activity-link block ">Posts &amp; Activity</a></li>
+
+              <li class="nav-dropdown__item nav-settings__dropdown-item t-14 t-black--light t-normal">
+                <a target="_blank" href="#" class="block nav-settings__manage-link ">Job postings</a> 
+              </li>
+          </ul>
+      </li>
+    <li class="nav-settings__dropdown-options--actions nav-settings__no-hover">
+      <ul class="nav-settings__dropdown-items">
+          <li class="nav-dropdown__item nav-settings__dropdown-item nav-dropdown__action t-14 t-black t-bold">
+            <a href="#" class="block ">Sign out</a>
+          </li>
+      </ul>
+    </li>
+
+</ul>
+</div>
+    </div>
+</li>
+<li id="app-launcher-nav-item" class="nav-item nav-item--app-launcher">
+  <div id="ember32" class="nav-item__content ">
+    <button class="nav-item__link dropdown-trigger">
+  <i class="fas fa-grip-horizontal"></i>
+  <div class="nav-item__title-container">
+    <span class="nav-item__title nav-item__dropdown-trigger--title">Work</span>
+    <i class="fas fa-sort-down"></i>
+  </div>
+</button>
+</div>
+</li>
+<li id="spotlight-one-nav-item" class="nav-item nav-item--spotlight-one nav-item__spotlight">
+  <div class="nav-item__wormhole">  
+    <div id="ember29" class="nav-item__content t-14 t-black t-normal premium-upsell-link ">
+<a href="#" class="link-without-visited-state nav-item__spotlight-upsell premium-upsell-link--long ">Try Premium Free for 1 Month</a>
+</div>
+  </div>
+</li>
+</ul>
+
+    </div>
+  </div>
+</nav>
+
+
+
+
+   
+<div class="container">
+<div class="messaging">
+      <div class="inbox_msg">
+        <div class="inbox_people">
+          <div class="headind_srch">
+            <div class="recent_heading">
+              <h4>Recent</h4>
+            </div>
+            <div class="srch_bar">
+              <div class="stylish-input-group">
+                <input type="text" class="search-bar"  placeholder="Search" >
+              </div>
+            </div>
+          </div>
+          <div class="inbox_chat">
+            <div class="chat_list active_chat">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+            <div class="chat_list">
+              <div class="chat_people">
+                <div class="chat_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+                <div class="chat_ib">
+                  <h5>Sunil Rajput <span class="chat_date">Dec 25</span></h5>
+                  <p>Test, which is a new approach to have all solutions 
+                    astrology under one roof.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mesgs">
+          <div class="msg_history">
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Test which is a new approach to have all
+                    solutions</p>
+                  <span class="time_date"> 11:01 AM    |    June 9</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Test which is a new approach to have all
+                  solutions</p>
+                <span class="time_date"> 11:01 AM    |    June 9</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>Test, which is a new approach to have</p>
+                  <span class="time_date"> 11:01 AM    |    Yesterday</span></div>
+              </div>
+            </div>
+            <div class="outgoing_msg">
+              <div class="sent_msg">
+                <p>Apollo University, Delhi, India Test</p>
+                <span class="time_date"> 11:01 AM    |    Today</span> </div>
+            </div>
+            <div class="incoming_msg">
+              <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil"> </div>
+              <div class="received_msg">
+                <div class="received_withd_msg">
+                  <p>We work directly with our designers and suppliers,
+                    and sell direct to you, which means quality, exclusive
+                    products, at a price anyone can afford.</p>
+                  <span class="time_date"> 11:01 AM    |    Today</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="type_msg">
+            <div class="input_msg_write">
+              <input type="text" class="write_msg" placeholder="Type a message" />
+              <button class="msg_send_btn" type="button"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+
+
+
+
+
+
+<div class="container chatbox">
+  <div class="row">
+      <div class="chatbox chatbox22 chatbox--tray">
+    <div class="chatbox__title">
+        <h5><a href="javascript:void()">Leave a message</a></h5>
+        <!--<button class="chatbox__title__tray">
+            <span></span>
+        </button>-->
+        <button class="chatbox__title__close">
+            <span>
+                <svg viewBox="0 0 12 12" width="12px" height="12px">
+                    <line stroke="#FFFFFF" x1="11.75" y1="0.25" x2="0.25" y2="11.75"></line>
+                    <line stroke="#FFFFFF" x1="11.75" y1="11.75" x2="0.25" y2="0.25"></line>
+                </svg>
+            </span>
+        </button>
+    </div>
+    <div class="chatbox__body">
+        <div class="chatbox__body__message chatbox__body__message--left">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--right">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--left">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--right">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+        <div class="chatbox__body__message chatbox__body__message--left">
+    
+    <div class="chatbox_timing">
+    <ul>
+    <li><a href="#"><i class="fa fa-calendar"></i> 22/11/2018</a></li>
+      <li><a href="#"><i class="fa fa-clock-o"></i> 7:00 PM</a></a></li>
+    </ul>
+    </div>
+  
+            <img src="https://www.gstatic.com/webp/gallery/2.jpg" alt="Picture">
+      <div class="clearfix"></div>
+      <div class="ul_section_full">
+      <ul class="ul_msg">
+      <li><strong>Person Name</strong></li>
+      <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+      </ul>
+      <div class="clearfix"></div>
+      <ul class="ul_msg2">
+      <li><a href="#"><i class="fa fa-pencil"></i> </a></li>
+      <li><a href="#"><i class="fa fa-trash chat-trash"></i></a></li>
+      </ul>
+      </div>
+       
+        </div>
+    </div>
+    <div class="panel-footer">
+                    <div class="input-group">
+                        <input id="btn-input" type="text" class="form-control input-sm chat_set_height" placeholder="Type your message here..." tabindex="0" dir="ltr" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off" contenteditable="true" />
+            
+                        <span class="input-group-btn">
+                            <button class="btn bt_bg btn-sm" id="btn-chat">
+                                Send</button>
+                        </span>
+                    </div>
+                </div>
+</div>
+      
+  </div>
+  </div>
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
